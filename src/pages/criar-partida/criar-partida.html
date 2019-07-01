@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>Criar fut</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg">
+   
+    <form [formGroup]="formGroup" (ngSubmit)="add()">
+      <ion-list>
+          <img src="{{t}}" alt="">
+          <ion-item>
+              <input type="file" (change)="enviaArquivo($event)"/>
+            </ion-item>
+          <ion-item>
+            <ion-label stacked>Nome da partida</ion-label>
+            <ion-input formControlName="nome" type="text"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label stacked>Lugar</ion-label>
+            <ion-input formControlName="lugar" type="text" required></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label stacked>Data partida</ion-label>
+            <ion-input formControlName="data" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>descriçao</ion-label>
+          <ion-input formControlName="descricao" type="text"></ion-input>
+      </ion-item>
+
+        <ion-item>
+          <button ion-button full>Vem !!</button>
+        </ion-item>
+      </ion-list>
+    </form>
+</ion-content>

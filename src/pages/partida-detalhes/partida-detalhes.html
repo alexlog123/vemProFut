@@ -1,0 +1,332 @@
+<!--
+  Generated template for the PartidaDetalhesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Partida</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+  <ion-card >
+    <img src="{{partidas?.imagem}}"/>
+    <ion-card-content>
+      <ion-card-title>
+        {{partidas.nome}}
+      </ion-card-title>
+      <p>
+         Local: {{partidas.lugar}}
+      </p>
+      <p> Data: {{partidas.data}}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+        <h2>descriçao</h2>
+    </ion-card-header>
+  
+    <p>{{partidas.descricao}}</p>
+  </ion-card>
+  
+<ion-row>
+  <ion-col col-6>
+  <ion-list>
+      <ion-list-header>
+        Time B
+      </ion-list-header>
+  
+      <ion-item-sliding>
+          <ion-item>
+            <ion-avatar *ngIf="partidas.b1 == 'participar'" (click)="participar({b1: this.uid, b1F: this.t })" item-start>
+              <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+            </ion-avatar>
+            <ion-avatar *ngIf="partidas.b1 != 'participar'" item-start>
+                <img src="{{partidas?.b1F}}">
+              </ion-avatar>
+            <h2>{{partidas.b1}}</h2>
+          </ion-item>
+        </ion-item-sliding>
+  
+  
+        <ion-item-sliding>
+            <ion-item>
+              <ion-avatar *ngIf="partidas.b2 == 'participar'" (click)="participar({b2: this.uid, b2F: this.t })" item-start>
+                <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+              </ion-avatar>
+              <ion-avatar *ngIf="partidas.b2 != 'participar'" item-start>
+                  <img src="{{partidas?.b2F}}">
+                </ion-avatar>
+              <h2>{{partidas.b2}}</h2>
+            </ion-item>
+          </ion-item-sliding>
+  
+          <ion-item-sliding>
+              <ion-item>
+                <ion-avatar *ngIf="partidas.b3 == 'participar'" (click)="participar({b3: this.uid, b3F: this.t })" item-start>
+                  <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                </ion-avatar>
+                <ion-avatar *ngIf="partidas.b3 != 'participar'" item-start>
+                    <img src="{{partidas?.b3F}}">
+                  </ion-avatar>
+                <h2>{{partidas.b3}}</h2>
+              </ion-item>
+            </ion-item-sliding>
+  
+            <ion-item-sliding>
+                <ion-item>
+                  <ion-avatar *ngIf="partidas.b4 == 'participar'" (click)="participar({b4: this.uid, b4F: this.t })" item-start>
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                  </ion-avatar>
+                  <ion-avatar *ngIf="partidas.b4 != 'participar'" item-start>
+                      <img src="{{partidas?.b4F}}">
+                    </ion-avatar>
+                  <h2>{{partidas.b4}}</h2>
+                </ion-item>
+              </ion-item-sliding>
+  
+              <ion-item-sliding>
+                  <ion-item>
+                    <ion-avatar *ngIf="partidas.b5 == 'participar'" (click)="participar({b5: this.uid, b5F: this.t })" item-start>
+                      <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                    </ion-avatar>
+                    <ion-avatar *ngIf="partidas.b5 != 'participar'" item-start>
+                        <img src="{{partidas?.b5F}}">
+                      </ion-avatar>
+                    <h2>{{partidas.b5}}</h2>
+                  </ion-item>
+                </ion-item-sliding>
+  
+                <ion-item-sliding>
+                    <ion-item>
+                      <ion-avatar *ngIf="partidas.b6 == 'participar'" (click)="participar({b6: this.uid, b6F: this.t })" item-start>
+                        <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                      </ion-avatar>
+                      <ion-avatar *ngIf="partidas.b6 != 'participar'" item-start>
+                          <img src="{{partidas?.b6F}}">
+                        </ion-avatar>
+                      <h2>{{partidas.b6}}</h2>
+                    </ion-item>
+                  </ion-item-sliding>
+  
+                  <ion-item-sliding>
+                      <ion-item>
+                        <ion-avatar *ngIf="partidas.b7 == 'participar'" (click)="participar({b7: this.uid, b7F: this.t })" item-start>
+                          <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                        </ion-avatar>
+                        <ion-avatar *ngIf="partidas.b7 != 'participar'" item-start>
+                            <img src="{{partidas?.b7F}}">
+                          </ion-avatar>
+                        <h2>{{partidas.b7}}</h2>
+                      </ion-item>
+                    </ion-item-sliding>
+  
+                    <ion-item-sliding>
+                        <ion-item>
+                          <ion-avatar *ngIf="partidas.b8 == 'participar'" (click)="participar({b8: this.uid, b8F: this.t })" item-start>
+                            <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                          </ion-avatar>
+                          <ion-avatar *ngIf="partidas.b8 != 'participar'" item-start>
+                              <img src="{{partidas?.b8F}}">
+                            </ion-avatar>
+                          <h2>{{partidas.b8}}</h2>
+                        </ion-item>
+                      </ion-item-sliding>
+  
+                      <ion-item-sliding>
+                          <ion-item>
+                            <ion-avatar *ngIf="partidas.b9 == 'participar'" (click)="participar({b9: this.uid, b9F: this.t })" item-start>
+                              <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                            </ion-avatar>
+                            <ion-avatar *ngIf="partidas.b9 != 'participar'" item-start>
+                                <img src="{{partidas?.b9F}}">
+                              </ion-avatar>
+                            <h2>{{partidas.b9}}</h2>
+                          </ion-item>
+                        </ion-item-sliding>
+  
+                        <ion-item-sliding>
+                            <ion-item>
+                              <ion-avatar *ngIf="partidas.b10 == 'participar'" (click)="participar({b10: this.uid, b10F: this.t })" item-start>
+                                <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                              </ion-avatar>
+                              <ion-avatar *ngIf="partidas.b10 != 'participar'" item-start>
+                                  <img src="{{partidas?.b10F}}">
+                                </ion-avatar>
+                              <h2>{{partidas.b10}}</h2>
+                            </ion-item>
+                          </ion-item-sliding>
+  
+                          <ion-item-sliding>
+                              <ion-item>
+                                <ion-avatar *ngIf="partidas.b11 == 'participar'" (click)="participar({b11: this.uid, b11F: this.t })" item-start>
+                                  <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                                </ion-avatar>
+                                <ion-avatar *ngIf="partidas.b11 != 'participar'" item-start>
+                                    <img src="{{partidas?.b11F}}">
+                                  </ion-avatar>
+                                <h2>{{partidas.b11}}</h2>
+                              </ion-item>
+                            </ion-item-sliding>
+  
+  
+  
+    </ion-list>
+  </ion-col>
+
+
+
+
+
+  <ion-col col-6 >
+    <ion-list>
+      <ion-list-header>
+        Time A
+      </ion-list-header>
+  
+      <ion-item-sliding>
+        <ion-item>
+          <ion-avatar *ngIf="partidas.a1 == 'participar'" (click)="participar({a1: this.uid, a1F: this.t })" item-start>
+            <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+          </ion-avatar>
+          <ion-avatar *ngIf="partidas.a1 != 'participar'" item-start>
+              <img src="{{partidas?.a1F}}">
+            </ion-avatar>
+          <h2>{{partidas.a1}}</h2>
+        </ion-item>
+      </ion-item-sliding>
+
+
+      <ion-item-sliding>
+          <ion-item>
+            <ion-avatar *ngIf="partidas.a2 == 'participar'" (click)="participar({a2: this.uid, a2F: this.t })" item-start>
+              <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+            </ion-avatar>
+            <ion-avatar *ngIf="partidas.a2 != 'participar'" item-start>
+                <img src="{{partidas?.a2F}}">
+              </ion-avatar>
+            <h2>{{partidas.a2}}</h2>
+          </ion-item>
+        </ion-item-sliding>
+
+        <ion-item-sliding>
+            <ion-item>
+              <ion-avatar *ngIf="partidas.a3 == 'participar'" (click)="participar({a3: this.uid, a3F: this.t })" item-start>
+                <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+              </ion-avatar>
+              <ion-avatar *ngIf="partidas.a3 != 'participar'" item-start>
+                  <img src="{{partidas?.a3F}}">
+                </ion-avatar>
+              <h2>{{partidas.a3}}</h2>
+            </ion-item>
+          </ion-item-sliding>
+
+          <ion-item-sliding>
+              <ion-item>
+                <ion-avatar *ngIf="partidas.a4 == 'participar'" (click)="participar({a4: this.uid, a4F: this.t })" item-start>
+                  <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                </ion-avatar>
+                <ion-avatar *ngIf="partidas.a4 != 'participar'" item-start>
+                    <img src="{{partidas?.a4F}}">
+                  </ion-avatar>
+                <h2>{{partidas.a4}}</h2>
+              </ion-item>
+            </ion-item-sliding>
+
+            <ion-item-sliding>
+                <ion-item>
+                  <ion-avatar *ngIf="partidas.a5 == 'participar'" (click)="participar({a5: this.uid, a5F: this.t })" item-start>
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                  </ion-avatar>
+                  <ion-avatar *ngIf="partidas.a5 != 'participar'" item-start>
+                      <img src="{{partidas?.a5F}}">
+                    </ion-avatar>
+                  <h2>{{partidas.a5}}</h2>
+                </ion-item>
+              </ion-item-sliding>
+
+              <ion-item-sliding>
+                  <ion-item>
+                    <ion-avatar *ngIf="partidas.a6 == 'participar'" (click)="participar({a6: this.uid, a6F: this.t })" item-start>
+                      <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                    </ion-avatar>
+                    <ion-avatar *ngIf="partidas.a6 != 'participar'" item-start>
+                        <img src="{{partidas?.a6F}}">
+                      </ion-avatar>
+                    <h2>{{partidas.a6}}</h2>
+                  </ion-item>
+                </ion-item-sliding>
+
+                <ion-item-sliding>
+                    <ion-item>
+                      <ion-avatar *ngIf="partidas.a7 == 'participar'" (click)="participar({a7: this.uid, a7F: this.t })" item-start>
+                        <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                      </ion-avatar>
+                      <ion-avatar *ngIf="partidas.a7 != 'participar'" item-start>
+                          <img src="{{partidas?.a7F}}">
+                        </ion-avatar>
+                      <h2>{{partidas.a7}}</h2>
+                    </ion-item>
+                  </ion-item-sliding>
+
+                  <ion-item-sliding>
+                      <ion-item>
+                        <ion-avatar *ngIf="partidas.a8 == 'participar'" (click)="participar({a8: this.uid, a8F: this.t })" item-start>
+                          <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                        </ion-avatar>
+                        <ion-avatar *ngIf="partidas.a8 != 'participar'" item-start>
+                            <img src="{{partidas?.a8F}}">
+                          </ion-avatar>
+                        <h2>{{partidas.a8}}</h2>
+                      </ion-item>
+                    </ion-item-sliding>
+
+                    <ion-item-sliding>
+                        <ion-item>
+                          <ion-avatar *ngIf="partidas.a9 == 'participar'" (click)="participar({a9: this.uid, a9F: this.t })" item-start>
+                            <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                          </ion-avatar>
+                          <ion-avatar *ngIf="partidas.a9 != 'participar'" item-start>
+                              <img src="{{partidas?.a9F}}">
+                            </ion-avatar>
+                          <h2>{{partidas.a9}}</h2>
+                        </ion-item>
+                      </ion-item-sliding>
+
+                      <ion-item-sliding>
+                          <ion-item>
+                            <ion-avatar *ngIf="partidas.a10 == 'participar'" (click)="participar({a10: this.uid, a10F: this.t })" item-start>
+                              <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                            </ion-avatar>
+                            <ion-avatar *ngIf="partidas.a10 != 'participar'" item-start>
+                                <img src="{{partidas?.a10F}}">
+                              </ion-avatar>
+                            <h2>{{partidas.a10}}</h2>
+                          </ion-item>
+                        </ion-item-sliding>
+
+                        <ion-item-sliding>
+                            <ion-item>
+                              <ion-avatar *ngIf="partidas.a11 == 'participar'" (click)="participar({a11: this.uid, a11F: this.t })" item-start>
+                                <img src="https://pngimage.net/wp-content/uploads/2018/06/sinal-de-mais-em-png-4.png">
+                              </ion-avatar>
+                              <ion-avatar *ngIf="partidas.a11 != 'participar'" item-start>
+                                  <img src="{{partidas?.a11F}}">
+                                </ion-avatar>
+                              <h2>{{partidas.a11}}</h2>
+                            </ion-item>
+                          </ion-item-sliding>
+      
+    
+  
+
+  
+    </ion-list>
+  </ion-col>
+</ion-row>
+</ion-content>
